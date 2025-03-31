@@ -1,9 +1,19 @@
 const PI = 3.14;
 function sumar(x, y) {
- return x + y;
+let total = x + y;
+ return total;
 }
 const multiplicar = (a, b) => {
- return a * b;
+    let total = x * y;
+    return total;
 }
-export {PI, sumar, multiplicar};
+function dividir (x, y) {
+    let total = x / y;
+    return total;
+}
+const restar = (x, y) => {
+    let total = x - y;
+    return total;
+}
+export {PI, sumar, multiplicar, restar, dividir};
 
