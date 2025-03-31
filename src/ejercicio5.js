@@ -11,6 +11,14 @@ console.log(miObjeto);
 
 function parsearUrl(laURL){
 
-    
+     
+     const urlObjeto = new URL(laURL);
+
+   
+     return {
+         host: urlObjeto.origin,             
+         pathname: urlObjeto.pathname,         
+         parametros: Object.fromEntries(urlObjeto.searchParams) 
+     };
 
 }

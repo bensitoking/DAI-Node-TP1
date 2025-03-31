@@ -22,6 +22,10 @@
     "ejercicio4": "node src/ejercicio4.js",
     "ejercicio5": "node src/ejercicio5.js",
     "ejercicio6": "node src/ejercicio6.js",
-    "ejercicio7": "node src/ejercicio7.js"
+    "ejercicio7": "node src/ejercicio7.js",
+    "ejercicio8": "node src/ejercicio8.js"
+  },
+  "dependencies": {
+    "currency-map-country": "^1.0.12"
   }
 }
