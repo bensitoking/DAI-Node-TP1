@@ -1,17 +1,17 @@
-import { getCurrency } from 'currency-map-country';
+import { getCountry } from 'currency-map-country';
 
 function obtenerMoneda(codigoPais) {
-    try {
-        const moneda = getCurrency(codigoPais);
-        console.log(`Resultado de getCurrency('${codigoPais}'):`, moneda);
-        return moneda || null;
-    } catch (error) {
-        console.error(`Error al obtener la moneda para ${codigoPais}: ${error.message}`);
+    const moneda = JSON.stringify(getCountry(codigoPais));
+
+    if (!moneda) {
+        console.warn(`Código de país inválido o no encontrado: ${codigoPais}`);
         return null;
     }
+
+    return moneda;
 }
 
-const codigos = ['AR', 'US', 'UZA'];
+const codigos = ['ARG', 'USA'];
 
 codigos.forEach(codigo => {
     const moneda = obtenerMoneda(codigo);
