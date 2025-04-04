@@ -26,6 +26,7 @@
     "ejercicio8": "node src/ejercicio8.js"
   },
   "dependencies": {
+    "axios": "^1.8.4",
     "currency-map-country": "^1.0.12"
   }
 }

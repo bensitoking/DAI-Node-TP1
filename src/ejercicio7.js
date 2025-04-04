@@ -11,7 +11,7 @@ function obtenerMoneda(codigoPais) {
     return moneda;
 }
 
-const codigos = ['ARG', 'USA'];
+const codigos = ['USA'];
 
 codigos.forEach(codigo => {
     const moneda = obtenerMoneda(codigo);
